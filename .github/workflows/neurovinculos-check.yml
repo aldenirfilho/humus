@@ -1,0 +1,25 @@
+name: Conferir FOCO CLARO e NeuroVínculos
+on:
+  pull_request:
+    paths: ['tools/neurovinculos/**', 'public/neurovinculos/**', '.github/workflows/neurovinculos-check.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/neurovinculos
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm run check
+      - run: npm run build
+      - name: Conferir cópia pública
+        run: diff -r dist ../../public/neurovinculos

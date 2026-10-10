@@ -71,6 +71,19 @@ function Home() {
         ))}
       </section>
 
+      <section className="mx-auto max-w-6xl px-5 pb-8" aria-labelledby="foco-claro-title">
+        <div className="rounded-3xl border border-line bg-card p-6 sm:p-8">
+          <p className="text-xs font-semibold tracking-widest text-brass uppercase">Selo TDAH Friendly · FOCO CLARO</p>
+          <h2 id="foco-claro-title" className="font-serif mt-3 text-3xl text-ink">Escolhas com menos ruído, mais clareza e controle.</h2>
+          <p className="mt-3 max-w-3xl text-base leading-relaxed text-muted">Avalie jogos, filmes, séries, sites, apps, livros e PDFs com critérios documentados. Bronze acima de 70, prata acima de 80 e ouro acima de 90 pontos. Evidência insuficiente mantém a avaliação pendente.</p>
+          <div className="mt-5 flex flex-wrap gap-4">
+            <a href="/neurovinculos/foco-claro/PAINEL.html" className="inline-flex min-h-11 items-center rounded-full bg-pine px-5 py-3 font-semibold text-on-pine">Abrir o avaliador →</a>
+            <a href="/neurovinculos/index.html" className="inline-flex min-h-11 items-center px-2 py-3 text-pine underline">Conhecer NeuroVínculos Brasil</a>
+          </div>
+          <p className="mt-4 text-sm leading-relaxed text-muted">Método editorial experimental; não é certificação clínica nem medida de dopamina. O painel calcula avaliações fornecidas; o agente pesquisa no assistente. Cursos têm índice preenchível de compatibilidade, sem previsão de sucesso profissional.</p>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-5 pb-6">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
