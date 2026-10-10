@@ -25,8 +25,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 7320,
-      "sha256": "325d3701b19218768e0689a2d76a838493939855f1ac10f46696e09c7ffe6305"
+      "bytes": 8173,
+      "sha256": "805894c6826389b5e2bee70432bba8cce1f8bc8cb092426153d17eb22425ded5"
     },
     {
       "file": "SKILL.md",
@@ -98,5 +98,7 @@
       "bytes": 9782,
       "sha256": "98e95bb8580f5135de4d82427e14a113eeb5a2d708e3d92f8b389cd5b8b6c2b2"
     }
-  ]
+  ],
+  "package_revision": "1.2-rev1",
+  "note": "Inventário da pasta de trabalho FOCO CLARO; a lista pública e o pacote portátil usam scripts/public_inventory.py."
 }

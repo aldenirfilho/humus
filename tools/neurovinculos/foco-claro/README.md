@@ -1,4 +1,4 @@
-# FOCO CLARO — Motor TDAH Friendly 1.0
+# FOCO CLARO — Motor TDAH Friendly 1.1
 
 **Método editorial experimental para escolhas pessoais. Não é selo oficial, avaliação clínica ou certificado WCAG.**
 
@@ -25,7 +25,7 @@ Abra **PAINEL.html** no navegador. O painel funciona localmente, sem cadastro, a
 70 não aprova; 80 é bronze; 90 é prata. A nota é um índice em 100 pontos, não porcentagem de atenção futura. Dados ausentes e travas não verificadas produzem pendência, não selo completo. Uma barreira crítica de segurança ou manipulação pode impedir selo mesmo com boa apresentação.
 
 ## Critérios
-Clareza; continuidade/pouco atrito; facilidade para começar; baixa carga de memória; engajamento significativo; pausa/retomada; apresentação/controle de estímulos; autonomia. Notas de 0 a 5, com âncoras em rubricas.json. O painel aceita uma casa decimal. O motor Python aceita precisão decimal adicional.
+Clareza; continuidade/pouco atrito; facilidade para começar; baixa carga de memória; engajamento significativo; pausa/retomada; apresentação/controle de estímulos; autonomia. Notas de 0 a 5, com âncoras em rubricas.json. O painel e o motor Python aceitam até uma casa decimal.
 
 Pesos de jogos: **15 / 20 / 15 / 10 / 15 / 10 / 10 / 5**. Os pesos de outros tipos estão no arquivo de rubricas. Todos somam 100. Os pesos são uma proposta editorial, não derivação de ensaio clínico.
 
@@ -51,7 +51,7 @@ O comando é uma convenção deste projeto, não um recurso que instala um agent
 Requisito: Python 3.10 ou superior. Apenas biblioteca padrão; sem instalação de dependências.
 
 ```bash
-cd foco_claro_v1
+cd foco-claro
 python motor.py exemplo_ficticio.json --output resultado.json --markdown resultado.md
 python -m unittest -v
 ```
@@ -88,7 +88,7 @@ Antes de decisões financeiras ou acadêmicas, verificar a oferta concreta, curr
 ## Privacidade e limites
 Sem telemetria, monitoramento oculto, conexão automática à internet ou armazenamento em nuvem. O painel mantém os dados somente na sessão da página; exporte o JSON para conservá-los. Fechar/recarregar pode perder preenchimentos. Não inserir dados pessoais identificáveis de pacientes, alunos ou terceiros.
 
-Arquivos exportados são locais. Não houve publicação no Notion ou em qualquer serviço externo. O Markdown pode ser usado como registro em plataformas que aceitem esse formato.
+Arquivos exportados pelo painel são locais. O painel não envia avaliações automaticamente ao Notion ou a outros serviços. O Markdown pode ser usado como registro em plataformas que aceitem esse formato.
 
 ## Evidência e validação
 Fontes em fontes.json: W3C COGA e WCAG 2.2, Xbox Accessibility Guidelines, NIMH e Acas. Elas fundamentam princípios gerais, não validam esta escala personalizada. O motor passou por testes de limites, dados ausentes, campos inválidos e travas, registrados em testes.txt. Testes de software não são validação clínica.
