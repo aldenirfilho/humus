@@ -132,6 +132,7 @@ export function SiteFooter() {
             Não substitui médico, advogado ou líder religioso. Em crise: CVV 188 · SAMU 192.
           </p>
           <p className="mt-3">Educativo. Outubro de 2026. Sem dados de pacientes.</p>
+          <p className="mt-3"><a href="/neurovinculos/foco-claro/PAINEL.html" className="underline">FOCO CLARO · Avaliador TDAH Friendly</a></p>
         </div>
       </div>
     </footer>
